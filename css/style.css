@@ -86,5 +86,21 @@ input:focus {
 
 }
 
+#username{
+    background-image: url(../icons/usernicon.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 11px;
+    background-position-x: 7px;
+}
+
+#userpassword{
+    background-image: url(../icons/password-icon.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 11px;
+    background-position-x: 7px;
+}
+
 
 
