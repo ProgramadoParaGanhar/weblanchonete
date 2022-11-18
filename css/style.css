@@ -1,5 +1,52 @@
 :root{
     --dark-background:#121212;
-    --loç: #1F1B24;
+    --dark-background-accent: #1F1B24;
     --primary: #000000;
+    --input-border: #8b8a8b;
+    --input-focus-h: 245;
+    --input-focus-s: 100%;
+    --input-focus-l: 42%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.form-container{
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-background);
+}
+
+.stacked{
+    background-color: var(--dark-background-accent);
+    padding: 3rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    font-size: 0.758rem;
+    background-color: #fff;
+    border: 2px solid var(--input-border);
+    border-radius: 8px;
+    width: 100%;
+    padding: 7px 20px;
+    box-sizing: border-box;
+    margin: 6px 0;
+}
+input[type=text]{
+
+
 }
