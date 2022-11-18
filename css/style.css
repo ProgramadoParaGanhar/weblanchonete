@@ -2,7 +2,7 @@
     --dark-background:#121212;
     --dark-background-accent: #1F1B24;
     --primary: #000000;
-    --input-border: #8b8a8b;
+    --input-border: #8400ff;
     --input-focus-h: 245;
     --input-focus-s: 100%;
     --input-focus-l: 42%;
@@ -30,6 +30,8 @@
 .stacked{
     background-color: var(--dark-background-accent);
     padding: 3rem;
+    border: 2px solid var(--input-border);
+
 }
 form{
     display: flex;
@@ -37,16 +39,37 @@ form{
 }
 
 .input{
-    font-size: 0.758rem;
+    font-size: 0.558rem;
     background-color: #fff;
     border: 2px solid var(--input-border);
-    border-radius: 8px;
+    border-radius: 4px;
     width: 100%;
     padding: 7px 20px;
     box-sizing: border-box;
     margin: 6px 0;
-}
-input[type=text]{
+    -webkit-transition: 0.5s;
+    transition: 0.6s;
+    outline: none;
 
 
+
 }
+
+input:focus {
+    border: 2px solid #555;
+}
+
+#useremail{
+    background-image: url(/icons/email-icon.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 11px;
+    background-position-x: 7px;
+
+}
+.icon-gray80 {
+    -webkit-filter: grayscale(100%) brightness(500%) brightness(30%);
+    filter: grayscale(100%) brightness(500%) brightness(30%);
+}
+
+
