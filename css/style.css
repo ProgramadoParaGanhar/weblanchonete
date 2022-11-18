@@ -1,11 +1,10 @@
 :root{
-    --dark-background:#121212;
+    --dark-background:#111111;
     --dark-background-accent: #1F1B24;
     --primary: #000000;
     --input-border: #8400ff;
-    --input-focus-h: 245;
-    --input-focus-s: 100%;
-    --input-focus-l: 42%;
+    --form-color: 	#5900ff34;
+    
 }
 *{
     margin: 0;
@@ -28,14 +27,32 @@
 }
 
 .stacked{
-    background-color: var(--dark-background-accent);
+    background-color: var(--form-color);
     padding: 3rem;
-    border: 2px solid var(--input-border);
+    position: relative;
+    
 
+
+}
+
+.stacked::before{
+    content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 0px; 
+  padding: 2px; 
+  background:linear-gradient(45deg,red,blue); 
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude; 
+          pointer-events: none;
 }
 form{
     display: flex;
     flex-direction: column;
+    font-size: 0.72rem;
 }
 
 .input{
@@ -60,16 +77,14 @@ input:focus {
 }
 
 #useremail{
-    background-image: url(/icons/email-icon.svg);
+    background-image: url(../icons/email-icon.svg);
     background-position: left;
     background-repeat: no-repeat;
     background-size: 11px;
     background-position-x: 7px;
+    
 
 }
-.icon-gray80 {
-    -webkit-filter: grayscale(100%) brightness(500%) brightness(30%);
-    filter: grayscale(100%) brightness(500%) brightness(30%);
-}
+
 
 
