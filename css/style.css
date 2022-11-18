@@ -3,9 +3,12 @@
     --dark-background-accent: #1F1B24;
     --primary: #000000;
     --input-border: #8400ff;
-    --form-color: 	#5900ff34;
+    --form-color: rgba(36, 35, 56, 0.97);
     --font-form:  'Roboto Condensed', sans-serif; 
     --button-color: rgb(221, 255, 0);
+}
+body{
+    height: 100%;
 }
 *{
     margin: 0;
@@ -24,24 +27,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--dark-background);
+    background-image: url("../icons/icons-gray-bg.svg");
 }
 
 .stacked{
     background-color: var(--form-color);
-    padding: 3rem;
+    padding: 2rem;
     position: relative;
-
-    
-
-
 }
 
 .stacked::before{
     content: "";
   position: absolute;
   inset: 0;
-  border-radius: 0px; 
+  border-radius: 0;
   padding: 2px; 
   background:linear-gradient(45deg,red,blue); 
   -webkit-mask: 
@@ -54,20 +53,19 @@
 form{
     display: flex;
     flex-direction: column;
-    font-size: 0.72rem;
+    font-size: 1rem;
     font-family: var(--font-form);
     
 }
 
 .input{
-    font-size: 0.558rem;
+    font-size: 1.25rem;
     background-color: #fff;
     border: 2px solid var(--input-border);
     border-radius: 4px;
     width: 100%;
-    padding: 7px 20px;
+     padding: 8px 26px;
     box-sizing: border-box;
-    margin: 6px 0;
     -webkit-transition: 0.5s;
     transition: 0.6s;
     outline: none;
@@ -85,8 +83,10 @@ input:focus {
     background-image: url(../icons/email-icon.svg);
     background-position: left;
     background-repeat: no-repeat;
-    background-size: 11px;
-    background-position-x: 7px;
+    background-size: 20px;
+    background-position-x: 4px;
+     padding: 8px 26px;
+
     
 
 }
@@ -95,7 +95,7 @@ input:focus {
     background-image: url(../icons/usernicon.svg);
     background-position: left;
     background-repeat: no-repeat;
-    background-size: 11px;
+    background-size: 20px;
     background-position-x: 7px;
 }
 
@@ -103,10 +103,15 @@ input:focus {
     background-image: url(../icons/password-icon.svg);
     background-position: left;
     background-repeat: no-repeat;
-    background-size: 11px;
+    background-size: 20px;
     background-position-x: 7px;
 }
 .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: inherit;
     align-self: center;
     padding: 6px 9px;
     cursor: pointer;
@@ -114,19 +119,18 @@ input:focus {
     border-radius: 8px;
     background-color: var(--button-color);
     text-transform: uppercase;
-    box-shadow: 0px 0px 0px;
+    box-shadow: 0 0 0;
     top: 5px;
     left: 5px;
-    box-shadow: 0px 1px 0px 0px, 2px 1px , 3px 2px 0px 0px, 1px 2px 0px 0px, 4px 4px 0px 0px;
+    box-shadow: 0 1px 0 0, 2px 1px , 3px 2px 0 0, 1px 2px 0 0, 4px 4px 0 0;
 }
 
 .button:hover{
     transition: 0.5s;
     
 }
-
-
-
-
-
+img{
+    max-width: 20%;
+    object-fit: cover;
+}
 
