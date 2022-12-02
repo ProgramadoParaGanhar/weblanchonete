@@ -7,16 +7,73 @@
     "header header header"
     "main main main";
     height: 100vh;
-    grid-template-columns: 10px 3fr;
-    grid-template-rows: 50px 3fr;
+    grid-template-rows: 115px 3fr;
 
     
 }
 header{
     grid-area: header;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.24);
 }
 
 main{
     grid-area: main;
 }
+
+a {
+    text-decoration: none;
+  }
+  
+  nav {
+    font-family: monospace;
+  }
+  
+  ul {
+    background: darkorange;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+  }
+  
+  li {
+    color: #fff;
+    background: darkorange;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    cursor: pointer;
+  }
+    
+  li a {
+    color: #fff;
+  }
+  
+  
+  
+  ul li ul {
+    background: orange;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+
+  }
+  
+  
+  ul li ul li {
+    clear: both;
+    width: 100%;
+  }
+
+li:hover ul.dropdown{
+    opacity: 1;
+    visibility: visible;
+}
+
