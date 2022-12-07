@@ -1,5 +1,8 @@
 
 @import url(reset.css);
+@import url(colors.css);
+
+
 
 .parent{
     display: grid;
@@ -7,13 +10,14 @@
     "header header header"
     "main main main";
     height: 100vh;
-    grid-template-rows: 115px 3fr;
-
-    
+    grid-template-rows: 55px;
 }
 header{
     grid-area: header;
-    background-color: rgba(0, 0, 0, 0.24);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 main{
@@ -25,19 +29,21 @@ a {
   }
   
   nav {
-    font-family: monospace;
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: .85rem;
   }
   
   ul {
-    background: darkorange;
     list-style: none;
     margin: 0;
     padding-left: 0;
   }
   
   li {
-    color: #fff;
-    background: darkorange;
     display: block;
     float: left;
     padding: 1rem;
@@ -48,13 +54,12 @@ a {
   }
     
   li a {
-    color: #fff;
+    color: #000;
   }
   
   
   
   ul li ul {
-    background: orange;
     min-width: 5rem;
     position: absolute;
     transition: all 0.5s ease;
@@ -75,5 +80,76 @@ a {
 li:hover ul.dropdown{
     opacity: 1;
     visibility: visible;
+}
+
+main{
+  background-color: #14213D;
+}
+
+.container{
+  margin-top: 56px;
+  margin-inline: 40px;
+  font-size: 0.95rem;
+  font-family: 'Kanit', sans-serif;
+  display: grid;
+  gap: 20px
+;
+}
+
+h2{
+  font-size: 1.5rem;
+}
+
+section > div{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 30px;
+}
+.container-cadastro{
+  min-height: 300px;
+  padding: 24px;
+  display: block;
+  color: white;
+
+}
+
+#consulta-cliente{
+  background-image: url(imgs/usericon.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 200px;
+  background-color: var(--TartOrange);
+}
+
+#consulta-fornecedor{
+  background-image: url(imgs/consulta.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 200px;
+  background-color: var(--PrussianBlue);
+}
+#consulta-produto{
+  background-image: url(imgs/consulta-produto.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 200px;
+  background-color: var( --OrangeWeb);
+}
+
+#alteração-estoque{
+  background-image: url(imgs/alteração.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 200px;
+  background-color:var(--Verdigris);
+}
+#cadastro-produto{
+  background-image: url(imgs/addproduto2.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 200px;
+  background-color: var( --DodgerBlue);
 }
 
