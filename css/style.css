@@ -68,6 +68,8 @@ h3 {
     justify-content: center;
     align-items: center;
     background-image: url("../icons/icons-gray-bg.svg");
+    margin-top: 3rem;
+
 }
 
 .stacked{
@@ -130,7 +132,7 @@ input:focus {
     background-repeat: no-repeat;
     background-size: var(--icon-size);
     background-position-x: var(--position-x);   
-=}
+}
 
 #username{
     background-image: url(../icons/usernicon.svg);
