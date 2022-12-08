@@ -99,17 +99,15 @@ h1{
 form{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 2px;
     font-size: 1rem;
     font-family: var(--font-form);
-    
 }
 
 .input{
     --icon-size: 20px;
     --position-x: 4px;
-    --pd-left:
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     background-color: #fff;
     border: 5px solid var(--input-border);
     border-radius: 6px;
@@ -144,6 +142,14 @@ input:focus {
 
 #userpassword{
     background-image: url(../icons/password-icon.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: var(--icon-size);
+    background-position-x: 7px;
+}
+
+#cpf{
+    background-image: url(../icons/cpf-icon.svg);
     background-position: left;
     background-repeat: no-repeat;
     background-size: var(--icon-size);
@@ -187,9 +193,7 @@ input:focus {
 
 
 @media(min-width: 600px){
-    body{
-        line-height: 3.5; 
-       }
+
        .input{
         padding: 5px 40px;
         --icon-size: 30px;

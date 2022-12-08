@@ -54,32 +54,37 @@ a {
   }
     
   li a {
-    color: #000;
+    color: #000000;
   }
-  
-  
-  
+
   ul li ul {
     min-width: 5rem;
     position: absolute;
-    transition: all 0.5s ease;
     margin-top: 1rem;
     left: 0;
     opacity: 0;
     visibility: hidden;
     z-index: 1;
-
+    transition: all 0.5s ease;
   }
-  
-  
-  ul li ul li {
+  ul li ul li a{
     clear: both;
     width: 100%;
+    color: white;
+    background-color: unset;
   }
 
 li:hover ul.dropdown{
     opacity: 1;
     visibility: visible;
+  background-color: #1F1B24;
+
+}
+
+ul li ul li a:hover {
+  padding-left: 10px;
+  border-left: 2px solid #3ca0e7;
+  transition: all 0.3s ease;
 }
 
 main{
