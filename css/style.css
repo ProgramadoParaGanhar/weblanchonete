@@ -61,6 +61,17 @@ h3 {
   text-transform: uppercase;
 }
 
+nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+  }
 .form-container{
     color: white;
     height: 100vh;
@@ -180,6 +191,14 @@ input:focus {
     background-repeat: no-repeat;
     background-size: var(--icon-size);
     background-position-x: 7px;
+}
+
+#pedidouser{
+    background-image: url(../icons/menu.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: var(--icon-size);
+    background-position-x: 7px; 
 }
 .button{
     display: flex;
