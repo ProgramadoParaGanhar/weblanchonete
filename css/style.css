@@ -157,6 +157,30 @@ input:focus {
     background-size: var(--icon-size);
     background-position-x: 7px;
 }
+
+#numberphone{
+    background-image: url(../icons/phone.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: var(--icon-size);
+    background-position-x: 7px;
+}
+
+#address{
+    background-image: url(../icons/endereço.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: var(--icon-size);
+    background-position-x: 7px;
+}
+
+#unidadeDeMedida{
+    background-image: url(../icons/umedida.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: var(--icon-size);
+    background-position-x: 7px;
+}
 .button{
     display: flex;
     align-items: center;
